@@ -6,10 +6,12 @@ package catalogo;
 public class Arquivo {
     
     private String nomeArquivo;
-    private int tamanhoArquivo;
+    private int nodeId;
+    private byte[] arquivo;
     
-    public Arquivo(){
-        
+    public Arquivo(String nomeArquivo, int nodeId){
+        this.nomeArquivo = nomeArquivo;
+        this.nodeId = nodeId;
     }
 
     public String getNomeArquivo() {
@@ -20,15 +22,12 @@ public class Arquivo {
         this.nomeArquivo = nomeArquivo;
     }
 
-    public int getTamanhoArquivo() {
-        return tamanhoArquivo;
+    public byte[] getTamanhoArquivo() {
+        return arquivo;
         //file.length();
     }
 
-    public void setTamanhoArquivo(int tamanhoArquivo) {
-        this.tamanhoArquivo = tamanhoArquivo;
+    public void setTamanhoArquivo(byte [] tamanhoArquivo) {
+        this.arquivo = arquivo;
     }
-    
-    
-    
 }
