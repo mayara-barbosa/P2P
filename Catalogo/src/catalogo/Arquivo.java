@@ -8,6 +8,23 @@ public class Arquivo {
     private String nomeArquivo;
     private int nodeId;
     private byte[] arquivo;
+
+    public int getNodeId() {
+        return nodeId;
+    }
+
+    public void setNodeId(int nodeId) {
+        this.nodeId = nodeId;
+    }
+
+    public byte[] getArquivo() {
+        return arquivo;
+    }
+
+    public void setArquivo(byte[] arquivo) {
+        this.arquivo = arquivo;
+    }
+  
     
     public Arquivo(String nomeArquivo, int nodeId){
         this.nomeArquivo = nomeArquivo;
